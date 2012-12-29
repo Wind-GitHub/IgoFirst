@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+ <!--branchに入るときは現ノードをPush
+ branchから出るときは現ノードにPop-->
+<root> <!--ルートもブランチの一種-->
+  <node FF="4" GM="1" SZ="19"/>
+  <node B="pd"/>
+  <node W="dp"/>
+  <node B="pd"/>
+  <node W="dp"/>
+  <node B="pd"/>
+  <node W="dp"/>
+  <node B="pd" C="dada: hm - looks troublesome."/>
+  <node W="dp"/>
+  <node B="pd"/>
+  <node W="dp"/>
+  <node B="pd"/>
+  <node W="dp"/>
+  <node B="pd">
+    <!--Push => Stack(1)-->
+    <branch>
+      <node W="dp" N="wrong direction"/>
+      <node B="pd"/>
+      <node W="dp"/>
+      <node B="pd"/>
+      <node W="dp"/>
+      <node B="pd"/>
+      <node W="dp">
+        <!--Push => Stack(2)-->
+        <branch> <!--ノードはbranchを持つとは限らないが、branchは必ずノードを持つ-->
+          <node B="pd"/>
+          <node W="dp"/>
+          <node B="pd"/>
+          <node W="dp"/>
+        </branch>
+        <branch>
+          <node B="pd"/>
+          <node W="dp"/>
+          <node B="pd"/>
+          <node W="dp"/>
+        </branch>
+        <branch>
+          <!--<node B="pd"/> Current-->
+          <node W="dp"/>
+          <node B="pd"/>
+          <node W="dp"/>
+        </branch>
+      </node>
+      <node B="pd"/>
+    </branch>
+    <branch>
+      <node W="dp"/>
+      <node B="pd"/>
+      <node W="dp"/>
+      <node B="pd"/>
+    </branch>
+  </node>
+  <node W="dp"/>
+  <node B="pd"/>
+  <node W="dp"/>
+  <node B="pd"/>
+  <node W="dp"/>
+  <node B="pd"/>
+  <node W="dp"/>
+  <node B="pd"/>
+  <node W="dp"/>
+  <node B="pd"/>
+  <node W="dp"/>
+</root>
